@@ -25,9 +25,8 @@ $(function() {
 
             var len = allFeeds.length; //define length so loop doesnt inquire everytime
             for (var i = 0; i < len; i++) {
-                var Url = allFeeds[i].url;
-                expect(Url).toBeDefined();
-                expect(Url.length).not.toBe(0);
+                expect(allFeeds[i].url).toBeDefined();
+                expect(allFeeds[i].url.length).not.toBe(0);
             }
         });
 
@@ -37,9 +36,8 @@ $(function() {
         it('names are defined', function() {
             var len = allFeeds.length;
             for (var i = 0; i < len; i++) {
-                var Name = allFeeds[i].name;
-                expect(Name).toBeDefined();
-                expect(Name.length).not.toBe(0);
+                expect(allFeeds[i].name).toBeDefined();
+                expect(allFeeds[i].name.length).not.toBe(0);
             }
         });
     });
